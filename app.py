@@ -3,9 +3,9 @@ from flask import Flask, render_template, request, flash
 app = Flask(__name__)
 app.secret_key = "manbearpig_MUDMAN888"
 
-@app.route("/")
-def index():
-   return render_template("welcome.html")
+@app.route("/form")
+def form():
+    return render_template('upload.html')
 
 @app.route("/hello")
 def index():
