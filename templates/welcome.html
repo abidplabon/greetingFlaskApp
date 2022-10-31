@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Pnumonia Detection </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="google-site-verification" content="ruPP7Z-1iMcsvrbicR-wNJ79VHatSn1JepKnsDgSDlw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  </head>
+<body>
+  <div class="t">I'm a</div>
+  <div>
+    <input type="checkbox" id="show">
+        <label for="show" class="show-btn">Doctor</label>
+    <div class="container">
+    <label for="show" class="close-btn fas fa-times"></label>
+    <div class="cna">
+    <a id="button1" href="{{url_for('searchID')}}" >Confirm the Diagnosis</a>
+    <a id="button2" href="{{url_for('detection')}}">Penumonia Diagnosis</a>
+    </div>
+    </div>
+  <div>
+        <input type="checkbox" id="show1">
+        <label for="show1" class="show-btn1">Lab Technician</label>
+  <div class="container">
+    <label for="show1" class="close-btn1 fas fa-times"></label>
+    <div class="cna1">
+      <a id="button3" href="{{url_for('Index')}}">View All Record</a>
+      <a id="button4" href="{{url_for('form')}}">Enter a New Record</a>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

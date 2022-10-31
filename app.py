@@ -5,7 +5,7 @@ app.secret_key = "manbearpig_MUDMAN888"
 
 @app.route("/form")
 def form():
-    return render_template('upload.html')
+    return render_template('welcome.html')
 
 @app.route("/hello")
 def index():
